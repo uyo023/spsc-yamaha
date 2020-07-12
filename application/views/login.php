@@ -73,8 +73,6 @@
   <script src="<?= base_url('assets/assets/js/core/popper.min.js') ?>"></script>
   <script src="<?= base_url('assets/assets/js/core/bootstrap.min.js') ?>"></script>
   <script src="<?= base_url('assets/assets/js/plugins/perfect-scrollbar.jquery.min.js') ?>"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chart JS -->
   <script src="<?= base_url('assets/assets/js/plugins/chartjs.min.js') ?>"></script>
   <!--  Notifications Plugin    -->
@@ -101,7 +99,7 @@
 			    var email    = $('[name="email"]').val();
 
 			    $.ajax({
-			    	url: '<?= base_url('Login/proses_login') ?>',
+			    	url: '<?= base_url('login/proses_login') ?>',
 			    	type: 'POST',
 			    	dataType: 'JSON',
 			    	data: {email:email, password:password},
